@@ -19,9 +19,9 @@ public class Main {
         Scanner wallcount = new Scanner(System.in);
         Scanner cost = new Scanner(System.in);
 
-        System.out.println("Enter wall height (in metres)");
+        System.out.println("Enter wall height (in metres):");
         int heightinput = height.nextInt();
-        System.out.println("Enter wall width (in metres)");
+        System.out.println("Enter wall width (in metres):");
         int widthinput =  width.nextInt();
         System.out.println("How many walls are there to paint?");
         int wallcountin = wallcount.nextInt();
