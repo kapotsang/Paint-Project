@@ -31,7 +31,9 @@ int Paintneeded = wallarea / 6; //1 can covers 6 metres squared
         System.out.println("Total cost is £" + Cancost);
         if (Cancost > 50){
             System.out.println("That's a lot of paint");
+        } else {System.out.println("Good luck redecorating!");
         }
+
 
     }
 }
