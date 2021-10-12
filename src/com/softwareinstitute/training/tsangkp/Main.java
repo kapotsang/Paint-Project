@@ -29,6 +29,25 @@ int Paintneeded = wallarea / 6; //1 can covers 6 metres squared
         float Cancost = Paintneeded * costinput;
 
         System.out.println("Total cost is £" + Cancost);
+
+       int time = 5;
+       String hours;
+       switch (time){
+           case 1: hours = "A Firm One";
+                   break;
+           case 2: hours = "A solid Two";
+           break;
+           case 3: hours = "Three Big Ones";
+           break;
+           default: hours = "Can't Help you there fella";
+
+           //switch (time){
+           //case 1:
+               //System.out.println("One hour? No way");
+             // break; }
+       }
+        System.out.println(hours);
+
         if (Cancost > 50){
             System.out.println("That's a lot of paint");
         } else {System.out.println("Good luck redecorating!");
