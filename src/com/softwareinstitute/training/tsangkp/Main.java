@@ -24,7 +24,7 @@ int Paintneeded = wallarea / 6; //1 can covers 6 metres squared
             System.out.println("That's a big wall");
         }
         System.out.println("How much does one can of paint cost? (in GBP)");
-
+//branch test comment
         int costinput = cost.nextInt();
         float Cancost = Paintneeded * costinput;
 
