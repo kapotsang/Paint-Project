@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
+//this line is a test for committing changes
         Scanner height = new Scanner(System.in);
         Scanner width = new Scanner(System.in);
         Scanner wallcount = new Scanner(System.in);
