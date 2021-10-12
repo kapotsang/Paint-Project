@@ -3,17 +3,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	//System.out.println("bomonga");
-    //int myByte = 120;
-    //int y = ++myByte;
-    //String message = "bogos binted";
-    //String firstname = "Joe";
-    //String lastname = "Mama";
-    //System.out.println(firstname + " " +lastname);
-    //System.out.println(message);
-    //System.out.println(y);
-    //String label1 = "item#";
-    //System.out.println(label1 + y);
+
         Scanner height = new Scanner(System.in);
         Scanner width = new Scanner(System.in);
         Scanner wallcount = new Scanner(System.in);
