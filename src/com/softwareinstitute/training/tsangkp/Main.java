@@ -8,6 +8,7 @@ public class Main {
         Scanner width = new Scanner(System.in);
         Scanner wallcount = new Scanner(System.in);
         Scanner cost = new Scanner(System.in);
+        Scanner colour = new Scanner(System.in);
 
         System.out.println("Enter wall height (in metres):");
         int heightinput = height.nextInt();
@@ -15,6 +16,8 @@ public class Main {
         int widthinput =  width.nextInt();
         System.out.println("How many walls are there to paint?");
         int wallcountin = wallcount.nextInt();
+        System.out.println("white,blue,red or yellow paint? (Lowercase)");
+        String colourin = colour.nextLine();
 
 int wallarea = heightinput * widthinput * wallcountin;
 int Paintneeded = wallarea / 6; //1 can covers 6 metres squared
