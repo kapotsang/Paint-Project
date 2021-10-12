@@ -4,7 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 //this line is a test for committing changes
-        for(int attempt = 0; attempt <3; attempt++) {
+
+        boolean playAgain = true;
+        int cycle = 1;
+        while (playAgain) {
+            if (cycle > 3) {
+                playAgain = false;
+            }
+
+            //for (int attempt = 0; attempt < 3; attempt++) {}
 
 
             Scanner height = new Scanner(System.in);
@@ -64,8 +72,9 @@ public class Main {
             } else {
                 System.out.println("Good luck redecorating!");
             }
-        }
 
+
+        cycle++;
+        }
     }
 }
-
