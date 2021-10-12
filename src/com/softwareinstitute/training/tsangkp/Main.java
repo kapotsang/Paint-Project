@@ -76,5 +76,9 @@ public class Main {
 
         cycle++;
         }
+        //int[] enhancedFor = {1,6,4,7,8,10};
+        //for (int i =1; i<enhancedFor.length;i++){
+        //System.out.println(enhancedFor[i]);
+        //}
     }
 }
