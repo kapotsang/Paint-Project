@@ -80,12 +80,18 @@ public class Main {
             supplies[0] = time ;
             supplies[1] = wallarea ;
             supplies[2] = Cancost;
-            for(int s :supplies){
-                System.out.println(s);
-            }
+            //for(int s :supplies){
+                //System.out.println(s);
+                System.out.println(supplies[0] + " hours");
+                System.out.println(supplies[1] + " metres squared");
+                System.out.println(supplies[2] + " British Pounds");
+            //}
 
         }
-
+int [][] multidem = {{1,2,3},{5,6,7},{8,9,10}};
+        int p = multidem[2][2];
+        System.out.println(p);
+        System.out.println(multidem.length);
 
         //int[] enhancedFor = {1,6,4,7,8,10};
         //for (int i =1; i<enhancedFor.length;i++){
