@@ -30,7 +30,9 @@ public class Main {
             System.out.println("white,blue,red or yellow paint? (Lowercase)");
             String colourin = colour.nextLine(); //switch statement?
 
-            int wallarea = heightinput * widthinput * wallcountin;
+
+            int wallarea = wallareaformula(heightinput,widthinput,wallcountin);
+            //int wallarea = heightinput * widthinput * wallcountin;
             int Paintneeded = wallarea / 6; //1 can covers 6 metres squared
 
             System.out.println("You have to paint" + " " + wallarea + " " + "metres squared and need" + " " + Paintneeded + "" + " cans of paint");
@@ -110,6 +112,22 @@ int [][] multidem = {{1,2,3},{5,6,7},{8,9,10}};
         //for (int i =1; i<enhancedFor.length;i++){
         //System.out.println(enhancedFor[i]);
         //}
+        System.out.println(BrushType(6));
     }
-}
+    public static String BrushType(int BrushSelection){
+        switch(BrushSelection){
+            case 1: return "Thin";
+            case 2: return "Thick";
+            default : return "Roller";
+        }}
+
+        public static int wallareaformula(int heightinput1,int widthinput1,int wallcountin1){
+
+            return heightinput1 * widthinput1 * wallcountin1;
+
+        }
+
+
+    }
+
 
