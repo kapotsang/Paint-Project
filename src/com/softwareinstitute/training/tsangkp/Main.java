@@ -41,7 +41,7 @@ public class Main {
             System.out.println("How much does one can of paint cost? (in GBP)");
 
             int costinput = cost.nextInt();
-            float Cancost = Paintneeded * costinput;
+            int Cancost = Paintneeded * costinput;
 
             System.out.println("Total cost is £" + Cancost);
 
@@ -75,10 +75,22 @@ public class Main {
 
 
         cycle++;
+
+            int[] supplies = new int[3]; //time, area, cancost
+            supplies[0] = time ;
+            supplies[1] = wallarea ;
+            supplies[2] = Cancost;
+            for(int s :supplies){
+                System.out.println(s);
+            }
+
         }
+
+
         //int[] enhancedFor = {1,6,4,7,8,10};
         //for (int i =1; i<enhancedFor.length;i++){
         //System.out.println(enhancedFor[i]);
         //}
     }
 }
+
