@@ -1,20 +1,19 @@
 package com.softwareinstitute.training.tsangkp;
 import java.util.Scanner;
+import java.util.*;
+import java.util.LinkedList;
 public class Main {
 
     public static void main(String[] args) {
-//this line is a test for committing changes
 
         boolean playAgain = true;
         int cycle = 1;
         while (playAgain) {
-            if (cycle > 3) {
+            if (cycle > 2) {
                 playAgain = false;
             }
 
             //for (int attempt = 0; attempt < 3; attempt++) {}
-
-
             Scanner height = new Scanner(System.in);
             Scanner width = new Scanner(System.in);
             Scanner wallcount = new Scanner(System.in);
@@ -29,7 +28,7 @@ public class Main {
             System.out.println("How many walls are there to paint?");
             int wallcountin = wallcount.nextInt();
             System.out.println("white,blue,red or yellow paint? (Lowercase)");
-            String colourin = colour.nextLine();
+            String colourin = colour.nextLine(); //switch statement?
 
             int wallarea = heightinput * widthinput * wallcountin;
             int Paintneeded = wallarea / 6; //1 can covers 6 metres squared
@@ -43,7 +42,12 @@ public class Main {
             int costinput = cost.nextInt();
             int Cancost = Paintneeded * costinput;
 
-            System.out.println("Total cost is £" + Cancost);
+           // System.out.println("Total cost is £" + Cancost);
+            if (Cancost > 50) {
+                System.out.println("That's a lot of paint");
+            } else {
+                System.out.println("Good luck redecorating!");
+            }
 
             int time = 5;
             String hours;
@@ -67,13 +71,6 @@ public class Main {
             }
             System.out.println(hours);
 
-            if (Cancost > 50) {
-                System.out.println("That's a lot of paint");
-            } else {
-                System.out.println("Good luck redecorating!");
-            }
-
-
         cycle++;
 
             int[] supplies = new int[3]; //time, area, cancost
@@ -86,12 +83,28 @@ public class Main {
                 System.out.println(supplies[1] + " metres squared");
                 System.out.println(supplies[2] + " British Pounds");
             //}
-
         }
 int [][] multidem = {{1,2,3},{5,6,7},{8,9,10}};
         int p = multidem[2][2];
         System.out.println(p);
         System.out.println(multidem.length);
+
+        //Array List of stores
+        List<String> StoresArray = new ArrayList<String>();
+        StoresArray.add("B&Q");
+        StoresArray.add("Homebase");
+        StoresArray.add("Wickes");
+        System.out.println( "Available Stores: " + StoresArray);
+
+        //Linked List of Stores
+        List<String> StoresLinked = new LinkedList<String>();
+        StoresLinked.add("time");
+        StoresLinked.add("Homebase");
+        StoresLinked.add("Wickes");
+        for (String element : StoresLinked){
+            System.out.println(element);
+        } //how to create linkedlist for int values?
+
 
         //int[] enhancedFor = {1,6,4,7,8,10};
         //for (int i =1; i<enhancedFor.length;i++){
